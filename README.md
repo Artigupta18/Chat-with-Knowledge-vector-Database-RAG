@@ -107,15 +107,11 @@ for i, chat in enumerate(st.session_state["chat_history"]):
     message(chat["user"], is_user=True, key=f"user_{i}")
     message(chat["bot"], is_user=False, key=f"bot_{i}")
 
-Deployment
+# Deployment
 
 To deploy the chatbot on a cloud platform like Streamlit Community Cloud, follow these steps:
-
 Push your project to GitHub.
-
 Go to Streamlit Community Cloud and connect your repo.
-
 Set the GOOGLE_API_KEY in the environment variables.
-
 Deploy and start using the chatbot!
 
