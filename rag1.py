@@ -15,7 +15,7 @@ import google.generativeai as genai
 from streamlit_chat import message
 
 api_key=st.secrets["API_KEY"]
-genai.configure(api_key="API_KEY")
+genai.configure(api_key=api_key)
 
 # Initialize Streamlit UI
 st.set_page_config(page_title="Briqko Construction Chatbot", layout="wide")
