@@ -14,8 +14,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 import google.generativeai as genai
 from streamlit_chat import message
 
-api_key=st.secrets["API_KEY"]
-genai.configure(api_key=api_key)
+
 
 # Initialize Streamlit UI
 st.set_page_config(page_title="Briqko Construction Chatbot", layout="wide")
@@ -70,6 +69,7 @@ def handle_query(user_query, api_key):
     """
     
     # Query Gemini API
+    api_key=st.secrets["API_KEY"]
     genai.configure(api_key=api_key)
     model = genai.GenerativeModel("gemini-2.0-flash")
     response = model.generate_content(prompt)
