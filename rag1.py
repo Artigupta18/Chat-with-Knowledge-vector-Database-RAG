@@ -2,7 +2,8 @@ import streamlit as st
 from PyPDF2 import PdfReader
 from sentence_transformers import SentenceTransformer
 import numpy as np
-from langchain_community.vectorstores import FAISS
+from langchain.vectorstores import FAISS
+import torch
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
