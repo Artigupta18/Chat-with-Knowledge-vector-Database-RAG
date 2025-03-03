@@ -14,8 +14,11 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 import google.generativeai as genai
 from streamlit_chat import message
 
-api_key=st.secrets["API_KEY"]
-genai.configure(api_key=api_key)
+try:
+    api_key = st.secrets["API"]["API_KEY"]
+    st.write("API Key found:", api_key[:5] + "...")
+except Exception as e:
+    st.write("Error:", e)
 
 # Initialize Streamlit UI
 st.set_page_config(page_title="Briqko Construction Chatbot", layout="wide")
