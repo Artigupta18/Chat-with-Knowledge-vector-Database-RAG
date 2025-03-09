@@ -1,4 +1,5 @@
 # Chat-with-Briqko-AI
+https://chat-with-briqko-ai-aqpvejqp6otpgngnzbxwr4.streamlit.app
 The Briqko Construction Chatbot is an AI-powered assistant designed to provide expert insights into Briqko technology and its applications in the construction industry. The chatbot utilizes a vector knowledge database, allowing users to upload PDFs via the UI to enhance its knowledge base. It leverages LangGraph, Hugging Face, and Google Gemini AI to retrieve relevant information and generate intelligent responses.
 
 # Features
