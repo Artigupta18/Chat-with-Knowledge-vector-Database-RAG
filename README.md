@@ -1,7 +1,7 @@
-# Chat-with-PDF
-https://chat-with-briqko-ai-aqpvejqp6otpgngnzbxwr4.streamlit.app
+# RAG Chatbot
+https://chat-with-rag-aqpvejqp6otpgngnzbxwr4.streamlit.app
 
-The Construction Chatbot is an AI-powered assistant designed to provide expert insights into Briqko technology and its applications in the construction industry. The chatbot utilizes a vector knowledge database, allowing users to upload PDFs via the UI to enhance its knowledge base. It leverages LangGraph, Hugging Face, and Google Gemini AI to retrieve relevant information and generate intelligent responses.
+This Chatbot is an AI-powered assistant designed to provide expert insights into Briqko technology and its applications in the construction industry. The chatbot utilizes a vector knowledge database, allowing users to upload PDFs via the UI to enhance its knowledge base. It leverages LangGraph, Hugging Face, and Google Gemini AI to retrieve relevant information and generate intelligent responses.
 
 # Features
 
@@ -60,8 +60,8 @@ Code Breakdown
 
 1. Initialize Streamlit UI
 
-st.set_page_config(page_title="Briqko Construction Chatbot", layout="wide")
-st.title("Chat with Briqko AI - Construction Expert 🚧")
+st.set_page_config(page_title="RAG Chatbot", layout="wide")
+st.title("Chat with Knowledge vector Database")
 
 2. Load and Process PDFs
 
@@ -98,8 +98,8 @@ def handle_query(user_query, api_key):
 
 4. Chat Interface
 
-st.subheader("💬 Chat with Briqko AI")
-user_query = st.text_input("Ask a question about Briqko & Construction:")
+st.subheader("RAG Based Chatbot")
+user_query = st.text_input("Ask a question")
 if st.button("Send"):
     if user_query:
         with st.spinner("Thinking..."):
